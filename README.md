@@ -22,18 +22,34 @@ CLI simples e poderoso para consulta de CEP (Código de Endereçamento Postal) b
 
 ### 📦 Instalação
 
-#### Uso com NPX (Recomendado)
+#### Instalação Global (Recomendado)
 
-Sem necessidade de instalação! Execute diretamente:
+Para executar o comando sem precisar baixar toda vez, instale globalmente:
+
+```bash
+npm install -g ache-cep-cli
+```
+
+Após a instalação global, você pode usar os comandos:
+
+```bash
+ache-cep-cli <cep>
+# OU use o comando curto
+cep <cep>
+```
+
+#### Uso com NPX (Sem Instalação)
+
+Execute diretamente sem instalação (o npx perguntará se pode baixar):
 
 ```bash
 npx ache-cep-cli <cep>
 ```
 
-#### Instalação Global
+Para executar sem confirmação:
 
 ```bash
-npm install -g ache-cep-cli
+npx -y ache-cep-cli <cep>
 ```
 
 #### Instalação como Dependência
@@ -47,7 +63,13 @@ npm install ache-cep-cli --save-dev
 #### Exemplo Básico
 
 ```bash
-npx ache-cep-cli 01310-100
+# Com instalação global
+cep 01310-100
+# OU
+ache-cep-cli 01310-100
+
+# Com npx (sem instalação)
+npx -y ache-cep-cli 01310-100
 ```
 
 #### Saída Esperada
@@ -66,10 +88,10 @@ O CLI aceita CEP com ou sem formatação:
 
 ```bash
 # Com hífen
-npx ache-cep-cli 01310-100
+cep 01310-100
 
 # Sem formatação
-npx ache-cep-cli 01310100
+cep 01310100
 ```
 
 ### 🛠️ Desenvolvimento
@@ -291,18 +313,34 @@ Simple and powerful CLI for querying Brazilian postal codes (CEP - Código de En
 
 ### 📦 Installation
 
-#### Use with NPX (Recommended)
+#### Global Installation (Recommended)
 
-No installation needed! Run directly:
+To run the command without needing to download every time, install globally:
+
+```bash
+npm install -g ache-cep-cli
+```
+
+After global installation, you can use the commands:
+
+```bash
+ache-cep-cli <cep>
+# OR use the short command
+cep <cep>
+```
+
+#### Use with NPX (No Installation)
+
+Run directly without installation (npx will ask if it can download):
 
 ```bash
 npx ache-cep-cli <cep>
 ```
 
-#### Global Installation
+To run without confirmation:
 
 ```bash
-npm install -g ache-cep-cli
+npx -y ache-cep-cli <cep>
 ```
 
 #### Install as Dependency
@@ -316,7 +354,13 @@ npm install ache-cep-cli --save-dev
 #### Basic Example
 
 ```bash
-npx ache-cep-cli 01310-100
+# With global installation
+cep 01310-100
+# OR
+ache-cep-cli 01310-100
+
+# With npx (no installation)
+npx -y ache-cep-cli 01310-100
 ```
 
 #### Expected Output
@@ -335,10 +379,10 @@ The CLI accepts CEP with or without formatting:
 
 ```bash
 # With hyphen
-npx ache-cep-cli 01310-100
+cep 01310-100
 
 # Without formatting
-npx ache-cep-cli 01310100
+cep 01310100
 ```
 
 ### 🛠️ Development
